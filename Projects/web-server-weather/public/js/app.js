@@ -17,7 +17,7 @@ weatherFrom.addEventListener('submit', (e) => {
                 messageOne.textContent = data.error;
             } else {
                 messageOne.textContent = data.location;
-                messageTwo.textContent = data.summary + " It is currently " + data.temperature + " degrees outside. There is a " + data.precip + "% chance of rain."
+                messageTwo.textContent = data.summary + " It is currently " + data.temperature + " degrees outside. The high today is " + data.high + " with a low of " + data.low + ". There is a " + data.precip + "% chance of rain."
             }
         })
     })

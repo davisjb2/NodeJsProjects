@@ -43,7 +43,7 @@ app.get('/weather', (req, res) => {
             if(error) {
                 return res.send({error});
             }
-            forecast(latitude, longitude, (error, {summary, temperature, precip}) => {
+            forecast(latitude, longitude, (error, {summary, temperature, precip, high, low}) => {
                 if(error) {
                     return res.send({error});
                 }
@@ -52,6 +52,8 @@ app.get('/weather', (req, res) => {
                     temperature,
                     precip,
                     location,
+                    high,
+                    low,
                     address: req.query.address,
                     title: 'Weather',
                     name: 'Brooke Tibbett'
