@@ -32,6 +32,8 @@
 #endif /*HAVE_CONFIG_H*/
 #include <vips/intl.h>
 
+#include <iostream>
+
 #include <vips/vips8>
 
 VIPS_NAMESPACE_START
